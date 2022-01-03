@@ -1,20 +1,25 @@
 package aplicacao;
 
-import entities.Client;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Programa {
 
 	public static void main(String[] args) {
 		
+			Set<String> set = new HashSet<>();
+			
+			set.add("TV");
+			set.add("Notebook");
+			set.add("Tablet");
+			set.add("caneta");
+			System.out.println(set.contains("Notebook"));
+			
+			for (String p : set) {
+			System.out.println(p);
+			}
+
 	
-		Client c1 = new Client("Maria","maria@gmail.com");
-		Client c2 = new Client("Maria","maria@gmail.com");
-		
-		System.out.println(c1.hashCode());
-		System.out.println(c2.hashCode());
-		System.out.println(c1.equals(c2));
-		
-		System.out.println(c1==c2);
 	}
 
 }
