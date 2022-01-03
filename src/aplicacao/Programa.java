@@ -1,13 +1,13 @@
 package aplicacao;
 
-import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Programa {
 
 	public static void main(String[] args) {
 		
-			Set<String> set = new HashSet<>();
+			Set<String> set = new TreeSet<>();
 			
 			set.add("TV");
 			set.add("Notebook");
